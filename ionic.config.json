@@ -1,0 +1,7 @@
+{
+  "name": "myForms",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

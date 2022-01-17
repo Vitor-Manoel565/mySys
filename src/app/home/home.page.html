@@ -1,0 +1,68 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GENEROS</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!--<div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>-->
+    <ion-card class="txt">
+      
+      <ion-card-header>
+        <ion-card-title class="titulo">HEROES</ion-card-title>
+        <ion-button [routerLink]="['/client']" routerdirection="forward" color="success">ACESSAR</ion-button>
+      </ion-card-header>
+    
+      
+    </ion-card>
+  
+  
+ <!-- fab placed to the bottom end -->
+ 
+
+
+<ion-card class="txt-1">
+  <ion-card-header>
+    <ion-card-title class="titulo">DRAMA</ion-card-title>
+    <ion-button color="success">ACESSAR</ion-button>
+  </ion-card-header>
+
+  
+</ion-card>
+
+
+<ion-card class="txt-2">
+  <ion-card-header>
+    <ion-card-title class="titulo">FICÇÃO</ion-card-title>
+    <ion-button  color="success">ACESSAR</ion-button>
+  </ion-card-header>
+
+  
+</ion-card>
+
+
+<ion-fab vertical="bottom" horizontal="start" edge slot="fixed">
+  <ion-fab-button>
+    <ion-icon  name="arrow-forward-circle"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-icon name="logo-instagram"></ion-icon>
+  </ion-fab-list>
+  <ion-fab-list side="end">
+    <ion-fab-button><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+  
+  
+</ion-content>
