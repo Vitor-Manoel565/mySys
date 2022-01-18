@@ -1,0 +1,5 @@
+git log (Visualiza se está logado no GitHub)
+git init
+git add .
+git statuss
+git commit -m "Nome do commit"
