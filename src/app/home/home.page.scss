@@ -26,65 +26,21 @@
   text-decoration: none;
 }
 
-.txt{
-  background-color: rgb(0, 0, 0);
-  height: 200px;
-}
 .txt-1{
-  background-color: rgb(235, 142, 126);
-  height: 200px;
-}
-
-.txt-2{
-  background-color: rgb(237, 122, 101);
-  height: 200px;
-}
-
-.titulo{
+  background-color: black;
   color: white;
 }
 
-.txt ion-icon{
-  margin-top: 100px;
-  width: 30px;
-  height: 30px;
-  color: white;
+
+ion-header{
+  text-align: center;
 }
 
-.txt-1 ion-icon{
-  margin-top: 100px;
-  width: 30px;
-  height: 30px;
-  color: white;
+.sl1{
+  background-color: black;
 }
 
-.txt-2 ion-icon{
-  margin-top: 100px;
-  width: 30px;
-  height: 30px;
-  color: white;
+.cardcenter img{
+  height: 250px;
+  width: 100%;
 }
-
-ion-button{
-  float: right;
-  margin-top: 90px;
-  
-
-}
-
-ion-fab{
-  margin-bottom: 50px;
-}
-
-.ic1 ion-icon{
-  width: 5px;
-  height: 5px;
-  color: black;
-}
-
-
-ion-card-subtitle{
-  margin-left: 20px;
-}
-
-

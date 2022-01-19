@@ -5,7 +5,6 @@
 
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -17,39 +16,29 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>-->
-    <ion-card class="txt">
-      
-      <ion-card-header>
-        <ion-card-title class="titulo">HEROES</ion-card-title>
-        <ion-button [routerLink]="['/client']" routerdirection="forward" color="success">ACESSAR</ion-button>
-      </ion-card-header>
+  <ion-card-header>
+    <ion-card class="cardcenter">
+      <ion-slides class="sl1" pager='true' [options]='slidesOpts'>
+        <ion-slide *ngFor='let i of [1]'>
+          <img src="/assets/hm.jpg">
+        </ion-slide>
+     <!-- fab placed to the bottom end -->
+     <ion-slide *ngFor='let i of [1]'>
+       <img class="imgcd" src="/assets/Eternos-Marvel.jpg">
+      </ion-slide>
     
-      
-    </ion-card>
-  
-  
- <!-- fab placed to the bottom end -->
- 
-
-
-<ion-card class="txt-1">
-  <ion-card-header>
-    <ion-card-title class="titulo">DRAMA</ion-card-title>
-    <ion-button color="success">ACESSAR</ion-button>
+      <ion-slide *ngFor='let i of [1]'>
+        <img src="/assets/7485239.jpg">
+      </ion-slide>
+    </ion-slides>
+         
+    </ion-card><!--cardcenter-->
   </ion-card-header>
-
   
-</ion-card>
-
-
-<ion-card class="txt-2">
-  <ion-card-header>
-    <ion-card-title class="titulo">FICÇÃO</ion-card-title>
-    <ion-button  color="success">ACESSAR</ion-button>
-  </ion-card-header>
-
   
-</ion-card>
+  
+
+
 
 
 
