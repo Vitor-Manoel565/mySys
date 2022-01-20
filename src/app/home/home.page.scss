@@ -36,11 +36,32 @@ ion-header{
   text-align: center;
 }
 
-.sl1{
+.cardcenter{
   background-color: black;
 }
 
-.cardcenter img{
-  height: 250px;
+ion-content{
+  --background: linear-gradient(to right, #ce0f0f,#ff4242);
+}
+
+
+.cards{
+  height: 350px;
+  border-radius: 0 0 28px 28px;
+  background-color: rgb(140, 9, 9);
+  H1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+   
+  }
+}
+
+ion-label{
+  text-align: center;
+}
+
+.div{
   width: 100%;
+  height: 200px;
+  background-color: white;
 }

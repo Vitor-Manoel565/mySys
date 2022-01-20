@@ -1,11 +1,11 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <ion-header>
-  <ion-toolbar>
-    <ion-title></ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title>IONICFlix<ion-icon name="logo-ionic"></ion-icon></ion-title>
 
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
+<ion-content class="tt" >
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">GENEROS</ion-title>
@@ -16,38 +16,38 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>-->
-  <ion-card-header>
-    <ion-card class="cardcenter">
-      <ion-slides class="sl1" pager='true' [options]='slidesOpts'>
-        <ion-slide *ngFor='let i of [1]'>
-          <img src="/assets/hm.jpg">
-        </ion-slide>
-     <!-- fab placed to the bottom end -->
-     <ion-slide *ngFor='let i of [1]'>
-       <img class="imgcd" src="/assets/Eternos-Marvel.jpg">
-      </ion-slide>
+  <ion-card class="cards">
+  <ion-card class="cardcenter">
+    <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [scrollbar]="true" [zoom]="true">
+      <ng-template swiperSlide><img src="/assets/7485239.jpg"></ng-template>
+      <ng-template swiperSlide><img src="/assets/hm.jpg"></ng-template>
+      <ng-template swiperSlide><img src="/assets/Eternos-Marvel.jpg"></ng-template>
+    </swiper>
+  </ion-card><!--cardcenter-->
+  <h1>MAIS POPULARES!</h1>
+</ion-card>
+
+  <ion-card><ion-list>
+    <ion-item [routerLink]="['/client']" routerdirection="forward">
+      <ion-icon name="play-outline"></ion-icon>
+      <ion-label>AÇÃO</ion-label>
+    </ion-item>
+    <ion-item  [routerLink]="['/gastos']" routerdirection="forward">
+      <ion-icon name="play-outline"></ion-icon>
+      <ion-label>COMEDIA</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="play-outline"></ion-icon>
+      <ion-label>ROMANCE</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="play-outline"></ion-icon>
+      <ion-label>TERROR</ion-label>
+    </ion-item>
     
-      <ion-slide *ngFor='let i of [1]'>
-        <img src="/assets/7485239.jpg">
-      </ion-slide>
-    </ion-slides>
-         
-    </ion-card><!--cardcenter-->
-  </ion-card-header>
-  
-  
-  
+  </ion-list></ion-card>
 
-
-
-
-
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>Direitos</ion-title>
-    <ion-card-subtitle>Todos os direitos reservados a Vitor Manoel!</ion-card-subtitle>
-  </ion-toolbar>
-</ion-footer>
-  
+  <div class="div"></div>
+   
   
 </ion-content>
