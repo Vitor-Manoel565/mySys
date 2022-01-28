@@ -41,7 +41,7 @@ ion-header{
 }
 
 ion-content{
-  --background: linear-gradient(to right, #ce0f0f,#ff4242);
+  --background: linear-gradient(to right, #bd0505,#d82b2b);
 }
 
 
@@ -64,4 +64,56 @@ ion-label{
   width: 100%;
   height: 200px;
   background-color: white;
+ 
+  .cdf ion-icon{
+    float: right;
+    width: 25px;
+    height: 25px;
+    color: green;
+  }
+
+}
+
+
+.ft{
+  margin: auto;
+  text-align: center;
+}
+
+.generos ion-icon{
+  color: rgb(210, 210, 29);
+}
+
+.imgcenter{
+  margin: auto;
+}
+
+
+footer{
+  ion-item{
+    --background: #800000;
+    --color: white;
+  }
+
+  ion-icon{
+    color: white;
+  }
+}
+
+.div{
+  .cdf1{
+    ion-icon{
+      float: right;
+      color: rgb(19, 158, 208);
+    }
+  }
+}
+
+.div{
+  .cdf2{
+    ion-icon{
+      float: right;
+      color: rgb(150, 150, 13);
+    }
+  }
 }

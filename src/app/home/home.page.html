@@ -1,8 +1,10 @@
 
 <ion-header>
   <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
     <ion-title>IONICFlix<ion-icon name="logo-ionic"></ion-icon></ion-title>
-
   </ion-toolbar>
 </ion-header>
 <ion-content class="tt" >
@@ -27,7 +29,7 @@
   <h1>MAIS POPULARES!</h1>
 </ion-card>
 
-  <ion-card><ion-list>
+  <ion-card class="generos"><ion-list>
     <ion-item [routerLink]="['/client']" routerdirection="forward">
       <ion-icon name="play-outline"></ion-icon>
       <ion-label>AÇÃO</ion-label>
@@ -36,7 +38,7 @@
       <ion-icon name="play-outline"></ion-icon>
       <ion-label>COMEDIA</ion-label>
     </ion-item>
-    <ion-item>
+    <ion-item [routerLink]="['/romance']" routerdirection="forward">
       <ion-icon name="play-outline"></ion-icon>
       <ion-label>ROMANCE</ion-label>
     </ion-item>
@@ -47,7 +49,45 @@
     
   </ion-list></ion-card>
 
-  <div class="div"></div>
+  <div class="div">
+    <div class="cdf">
+      <ion-item>
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-label>NOS AVALIE</ion-label>
+      </ion-item>
+    </div>
+   
+<div class="cdf1">
+  <ion-item >
+    <ion-label>COMPARTILHE COM UM AMIGO</ion-label>
+    <ion-icon name="body-outline"></ion-icon>
+  </ion-item>
+</div>
+
+<div class="cdf2">
+  <ion-item>
+    <ion-icon name="chatbubbles-outline"></ion-icon>
+    <ion-label>SUPORTE</ion-label>
+  </ion-item>
+</div>
+
+  </div><!--div-->
    
   
 </ion-content>
+
+<!-- Footer without a border -->
+<footer>
+  <ion-item>
+  <ion-icon name="logo-instagram"></ion-icon>
+    <ion-label>vitor-monel.12</ion-label>
+  </ion-item>
+  <ion-item>
+  <ion-icon name="logo-github"></ion-icon>
+  <ion-label>Vitor-Manoel565</ion-label>
+</ion-item>
+  
+</footer>
+
+
+  

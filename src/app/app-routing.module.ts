@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'client',
     loadChildren: () => import('./client/client/client.module').then( m => m.ClientPageModule)
   },
+  {
+    path: 'romance',
+    loadChildren: () => import('./romance/romance/romance.module').then( m => m.RomancePageModule)
+  },
+  {
+    path: 'blank',
+    loadChildren: () => import('./formcadastro/blank/blank.module').then( m => m.BlankPageModule)
+  },
 ];
 
 @NgModule({
