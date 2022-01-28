@@ -3,4 +3,5 @@ git init
 git add .
 git status
 git commit -m "Nome do commit"
+git push origin main
  <ion-button [routerLink]="['/client']" routerdirection="forward" color="success">ACESSAR</ion-button>
