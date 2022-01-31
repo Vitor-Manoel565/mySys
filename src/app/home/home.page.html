@@ -16,17 +16,19 @@
 
 
   <ion-card class="cards">
-  <ion-card class="cardcenter">
-    <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [scrollbar]="true" [zoom]="true">
+  
+    <swiper [autoplay]="true" [keyboard]="true" [pagination]="false" [scrollbar]="false" [zoom]="false">
       <ng-template swiperSlide><img src="/assets/7485239.jpg"></ng-template>
       <ng-template swiperSlide><img src="/assets/hm.jpg"></ng-template>
       <ng-template swiperSlide><img src="/assets/Eternos-Marvel.jpg"></ng-template>
+      <ng-template swiperSlide><img src="/assets/black-comedia-new-orange-wallpaper-preview.jpg"></ng-template>
     </swiper>
-  </ion-card><!--cardcenter-->
+ 
   <h1>MAIS POPULARES!</h1>
 </ion-card><!--cards-->
 
-  <ion-card class="generos"><ion-list>
+  <ion-card class="generos">
+    <ion-list>
     <ion-item [routerLink]="['/client']" routerdirection="forward">
       <ion-icon name="play-outline"></ion-icon>
       <ion-label>AÇÃO</ion-label>
@@ -86,6 +88,3 @@
 </ion-item>
   
 </footer>
-
-
-  
