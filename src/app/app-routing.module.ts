@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'terror',
     loadChildren: () => import('./Terror/terror/terror.module').then( m => m.TerrorPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat/chat.module').then( m => m.ChatPageModule)
+  },
 ];
 
 @NgModule({
