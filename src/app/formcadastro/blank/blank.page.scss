@@ -1,57 +1,24 @@
-html,
-body {
-  height: 100%;
+body{
+  background-color: black;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-}
-
-.form-signin {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
+img{
   margin: auto;
 }
 
-.form-signin .checkbox {
-  font-weight: 400;
+ion-card{
+  margin-top: -300px;
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+ion-checkbox{
+  margin-top: 5px;
+  margin-left: 5px;
+  
+  
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-ion-content{
-    --background: #000000;
-    --color: white;
-}
-
-.btn-primary{
-    background-color: #800000;
-    border-color: #800000;
-}
-
-ion-header{
-    --background-color: #800000;
-}
-
-.form-floating{
-  color: #000000;
+ion-label{
+  margin-left: 5px;
+  color: black;
+ 
 }

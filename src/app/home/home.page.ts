@@ -14,12 +14,12 @@ export class HomePage {
   constructor() {}
 
   doRefresh(event) {
-    console.log('Begin async operation');
+    console.log('Inicio da operação refresh');
 
-    setTimeout(() => {
-      console.log('Async operation has ended');
+    setTimeout(() => { //tempo do refresh 3000 milisegundos
+      console.log('Fim da operação refresh');
       event.target.complete();
-    }, 2000);
+    }, 3000);
   }
 
 }

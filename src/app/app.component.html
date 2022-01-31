@@ -1,17 +1,27 @@
-<ion-app><ion-menu side="start" menuId="first" contentId="main">
-  <ion-header>
-    <ion-toolbar color="secondary">
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+  <div class="menus">
+    <ion-header>
+      <ion-toolbar color="secondary">
+        <ion-title>MENU</ion-title>
+        <ion-chip>
+          <ion-avatar>
+            <img src="/assets/147144.png">
+          </ion-avatar>
+          <ion-label>Usuário</ion-label>
+        </ion-chip>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <ion-content><!--Menu-->
     <ion-list>
-      <ion-item>CADASTRO</ion-item>
+      <ion-item [routerLink]="['/cadastro']">CADASTRO</ion-item>
       <ion-item [routerLink]="['/blank']">LOGIN</ion-item>
-      <ion-item>FAVORITOS</ion-item>
+      <ion-item >FAVORITOS</ion-item>
       <ion-item>RECOMENDAÇÕES</ion-item>
     </ion-list>
-  </ion-content>
+  </ion-content><!--menu-->
 </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'blank',
     loadChildren: () => import('./formcadastro/blank/blank.module').then( m => m.BlankPageModule)
   },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
 ];
 
 @NgModule({

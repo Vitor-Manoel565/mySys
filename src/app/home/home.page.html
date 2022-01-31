@@ -5,22 +5,16 @@
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
     <ion-title>IONICFlix<ion-icon name="logo-ionic"></ion-icon></ion-title>
+
   </ion-toolbar>
 </ion-header>
-<ion-content class="tt" >
+<ion-content class="contentConteudo" >
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">GENEROS</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
 
-  <!--<div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>-->
+
   <ion-card class="cards">
   <ion-card class="cardcenter">
     <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [scrollbar]="true" [zoom]="true">
@@ -30,7 +24,7 @@
     </swiper>
   </ion-card><!--cardcenter-->
   <h1>MAIS POPULARES!</h1>
-</ion-card>
+</ion-card><!--cards-->
 
   <ion-card class="generos"><ion-list>
     <ion-item [routerLink]="['/client']" routerdirection="forward">
@@ -50,9 +44,10 @@
       <ion-label>TERROR</ion-label>
     </ion-item>
     
-  </ion-list></ion-card>
+  </ion-list>
+</ion-card><!--generos-->
 
-  <div class="div">
+<div class="divFooter">
     <div class="cdf">
       <ion-item>
         <ion-icon name="heart-outline"></ion-icon>
@@ -74,10 +69,10 @@
   </ion-item>
 </div>
 
-  </div><!--div-->
+  </div><!--divFooter-->
    
   
-</ion-content>
+</ion-content><!--contentConteudo-->
 
 <!-- Footer without a border -->
 <footer>
